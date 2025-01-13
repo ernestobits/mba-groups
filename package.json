@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "MBA Groups",
   "main": "index.js",
+  "homepage": "https://ernestobits.github.io/mba-groups",
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack",

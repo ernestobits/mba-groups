@@ -3,6 +3,7 @@
 ## Config Files
 - package.json
 - webpack.config.js
+- .gitignore
 
 ## Sources
 - public/index.html
