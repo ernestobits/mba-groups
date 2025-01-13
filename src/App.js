@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 
 import Select from "react-select";
 import Histogram from "./components/Histogram";
-
 import CryptoJS from "crypto-js";
+import encodedData from "./data.json.enc";
 
 async function decriptData(password) {
-  const response = await fetch("/data.json.enc");
-  const data = await response.text();
+  const data = encodedData;
   const bytes = CryptoJS.AES.decrypt(data, password.toLowerCase());
   const originalText = bytes.toString(CryptoJS.enc.Utf8);
   const jsonData = JSON.parse(originalText);
